@@ -45,9 +45,12 @@ function paintStuff(event){
   if (shiftedTF){
     container.addEventListener('mouseover', paintPixels);
     container.removeEventListener('click', paintPixels);
+    window.alert('Brush-Mode is ON (Shift + Click to toggle off)');
   } else {
     container.addEventListener('click', paintPixels);
     container.removeEventListener('mouseover', paintPixels);
+    // window.alert('Brush-Mode is OFF (Shift + Click to toggle on)')
+
   }
 }
 
